@@ -1,0 +1,56 @@
+{
+  "name": "godfredakpan/moneywave",
+  "type": "library",
+  "description": "An implementation of the Moneywave API by Flutterwave",
+  "keywords": [
+    "godfredakpan",
+    "moneywave",
+    "finance",
+    "flutterwave",
+    "fintech"
+  ],
+  "homepage": "https://github.com/godfredakpan/Moneywave",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Godfred Akpan",
+      "email": "godfredakpan@gmail.com",
+      "homepage": "hng.fun/profile/godfredakpan",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php" : "~7.0",
+    "guzzlehttp/guzzle": "~6.2",
+    "vlucas/phpdotenv": "^2.4",
+    "monolog/monolog": "^1.22",
+    "symfony/var-dumper": "^3.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "~5.4",
+    "scrutinizer/ocular": "~1.1",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "godfredakpan\\Moneywave\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "godfredakpan\\Moneywave\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "format": "phpcbf --standard=psr2 src/"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "suggest": {
+    "ramsey/uuid": "You can use this to generate UUIDs which you then use for your transaction references"
+  }
+}
